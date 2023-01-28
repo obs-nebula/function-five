@@ -1,0 +1,23 @@
+specVersion: 0.35.0
+name: one
+runtime: node
+registry: ""
+image: ""
+imageDigest: ""
+created: 2023-01-28T14:06:19.578591355-03:00
+build:
+  buildpacks: []
+  builder: ""
+  buildEnvs: []
+run:
+  volumes: []
+  envs: []
+deploy:
+  namespace: ""
+  remote: false
+  annotations: {}
+  options: {}
+  labels: []
+  healthEndpoints:
+    liveness: /health/liveness
+    readiness: /health/readiness
