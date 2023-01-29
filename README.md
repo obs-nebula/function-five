@@ -1,5 +1,7 @@
 # function-five
 
+[![ci](https://github.com/obs-nebula/function-five/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/obs-nebula/function-five/actions/workflows/ci.yml)
+
 Run `./get-func.sh` to get the `func` command.
 
 > Functions created with the following commands:
