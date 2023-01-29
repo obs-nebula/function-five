@@ -6,6 +6,7 @@
   "scripts": {
     "test": "node test/unit.js && node test/integration.js",
     "start": "FUNC_LOG_LEVEL=info faas-js-runtime ./index.js",
+    "devjs": "FUNC_LOG_LEVEL=info faas-js-runtime ./index.js --port=8084",
     "debug": "nodemon --inspect ./node_modules/faas-js-runtime/bin/cli.js ./index.js"
   },
   "keywords": [],
