@@ -14,7 +14,7 @@ const handle = async (context, body) => {
   }
 
   return { statusCode: 405, statusMessage: 'Method not allowed' };
-}
+};
 
 async function callNext(value) {
   try {

@@ -4,6 +4,7 @@
   "description": "A function which responds to HTTP requests",
   "main": "index.js",
   "scripts": {
+    "pretest": "eslint --ignore-path .gitignore .",
     "test": "DEV=true node test/unit.js && DEV=true node test/integration.js",
     "start": "FUNC_LOG_LEVEL=info faas-js-runtime ./index.js",
     "devjs": "FUNC_LOG_LEVEL=info faas-js-runtime ./index.js --port=8083",
@@ -16,6 +17,7 @@
     "faas-js-runtime": "^0.9.7"
   },
   "devDependencies": {
+    "eslint": "^8.33.0",
     "nodemon": "^2.0.4",
     "supertest": "^6.3.1",
     "tape": "^5.0.1"

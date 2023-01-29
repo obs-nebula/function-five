@@ -18,7 +18,7 @@ const handle = async (context, body) => {
   }
 
   return { statusCode: 405, statusMessage: 'Method not allowed' };
-}
+};
 
 // Export the function
 module.exports = { handle };
