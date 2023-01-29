@@ -1,0 +1,46 @@
+name: ci
+on:
+  push:
+    branches: ["*"]
+  pull_request:
+    branches: ["*"]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: 18
+      - name: one-install
+        working-directory: ./one
+        run: npm install
+      - name: one-test
+        working-directory: ./one
+        run: npm test
+      - name: two-install
+        working-directory: ./two
+        run: npm install
+      - name: two-test
+        working-directory: ./two
+        run: npm test
+      - name: three-install
+        working-directory: ./three
+        run: npm install
+      - name: three-test
+        working-directory: ./three
+        run: npm test
+      - name: four-install
+        working-directory: ./four
+        run: npm install
+      - name: four-test
+        working-directory: ./four
+        run: npm test
+      - name: five-install
+        working-directory: ./five
+        run: npm install
+      - name: five-test
+        working-directory: ./five
+        run: npm test
+
+
