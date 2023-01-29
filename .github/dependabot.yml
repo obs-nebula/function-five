@@ -12,7 +12,6 @@ updates:
     directory: "/three"
     schedule:
       interval: "daily"
-    - package-ecosystem: "npm"
   - package-ecosystem: "npm"
     directory: "/four"
     schedule:
