@@ -1,0 +1,23 @@
+version: 2
+updates:
+  - package-ecosystem: "npm"
+    directory: "/one"
+    schedule:
+      interval: "daily"
+  - package-ecosystem: "npm"
+    directory: "/two"
+    schedule:
+      interval: "daily"
+  - package-ecosystem: "npm"
+    directory: "/three"
+    schedule:
+      interval: "daily"
+    - package-ecosystem: "npm"
+  - package-ecosystem: "npm"
+    directory: "/four"
+    schedule:
+      interval: "daily"
+  - package-ecosystem: "npm"
+    directory: "/five"
+    schedule:
+      interval: "daily"
