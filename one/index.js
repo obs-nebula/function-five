@@ -18,13 +18,14 @@ const handle = async (context, body) => {
 
 async function callNext(value) {
   try {
+    console.log(`Sending ${value} to Function Two`);
     const res = await fetch('http://localhost:8081', {
       method: 'POST',
       body: JSON.stringify({ value: value }),
       headers: { 'Content-Type': 'application/json' }
     });
     const json = await res.json();
-    console.log(`Sent ${JSON.stringify(json)} to function Two`);
+    console.log(`Got ${JSON.stringify(json)} from Function Two`);
   } catch (e) {
     console.log(e);
   }

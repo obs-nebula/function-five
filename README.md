@@ -1,5 +1,7 @@
 # function-five
 
+Run `./get-func.sh` to get the `func` command.
+
 > Functions created with the following commands:
 
 ```
