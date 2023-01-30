@@ -14,18 +14,16 @@ Run `./get-func.sh` to get the `func` command.
 ./func create -l node -t http five
 ```
 
-## Run in `dev JS` ??? local mode
-
-```
-./dev-js.sh
-```
-
-## Run local
+## Run
 
 ### Build the functions
 
 ```
-./func-build.sh
+./func build --path one/   --registry your_registry_here
+./func build --path two/   --registry your_registry_here
+./func build --path three/ --registry your_registry_here
+./func build --path four/  --registry your_registry_here
+./func build --path five/  --registry your_registry_here
 ```
 
 ### Run 
