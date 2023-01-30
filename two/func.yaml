@@ -7,7 +7,7 @@ imageDigest: ""
 created: 2023-01-28T14:06:25.598098242-03:00
 build:
   buildpacks: []
-  builder: ""
+  builder: pack
   buildEnvs: []
 run:
   volumes: []

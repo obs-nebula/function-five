@@ -19,7 +19,7 @@ const handle = async (context, body) => {
 async function callNext(value) {
   try {
     console.log(`Sending ${value} to Function Four`);
-    const res = await fetch('http://localhost:8083', {
+    const res = await fetch('http://four:8083', {
       method: 'POST',
       body: JSON.stringify({ value: value }),
       headers: { 'Content-Type': 'application/json' }

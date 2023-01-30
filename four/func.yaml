@@ -1,13 +1,13 @@
 specVersion: 0.35.0
 name: four
 runtime: node
-registry: ""
-image: ""
+registry: quay.io/hfrota
+image: quay.io/hfrota/four:latest
 imageDigest: ""
 created: 2023-01-28T14:06:30.421963346-03:00
 build:
   buildpacks: []
-  builder: ""
+  builder: pack
   buildEnvs: []
 run:
   volumes: []

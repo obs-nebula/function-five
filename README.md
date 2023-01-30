@@ -14,25 +14,22 @@ Run `./get-func.sh` to get the `func` command.
 ./func create -l node -t http five
 ```
 
-Run in `dev JS` mode
+## Run in `dev JS` ??? local mode
 
 ```
 ./dev-js.sh
 ```
 
-Run func local
+## Run local
 
-> With this commands bellow, func will start to selecting random ports, and that means we need to change the code after the second step.
+### Build the functions
 
 ```
-./func run build --path one/ --registry quay.io/hfrota
-./func run build --path two/ --registry quay.io/hfrota
-./func run build --path three/ --registry quay.io/hfrota
-./func run build --path four/ --registry quay.io/hfrota
-./func run build --path five/ --registry quay.io/hfrota
+./func-build.sh
 ```
 
-Maybe it will make more sense to have a workflow between `dev JS` mode and `deploy` mode, since in `deploy`
-https://knative.dev/docs/getting-started/build-run-deploy-func/#procedure_1
- 
- ?? 
+### Run 
+
+```
+docker-compose up
+```

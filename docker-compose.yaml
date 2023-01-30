@@ -1,0 +1,43 @@
+version: '3'
+
+networks:
+  default:
+    name: function-five
+    driver: bridge
+
+services:
+  one:
+    image: quay.io/hfrota/one:latest
+    hostname: one
+    environment:
+      - FUNC_PORT=8080 # same as faas-js-runtime --port=8080
+    ports:
+      - "8080:8080"
+  two:
+    image: quay.io/hfrota/two:latest
+    hostname: two
+    environment:
+      - FUNC_PORT=8081
+    ports:
+      - "8081:8081"
+  three:
+    image: quay.io/hfrota/three:latest
+    hostname: three
+    environment:
+      - FUNC_PORT=8082
+    ports:
+      - "8082:8082"
+  four:
+    image: quay.io/hfrota/four:latest
+    hostname: four
+    environment:
+      - FUNC_PORT=8083
+    ports:
+      - "8083:8083"
+  five:
+    image: quay.io/hfrota/five:latest
+    hostname: five
+    environment:
+      - FUNC_PORT=8084
+    ports:
+      - "8084:8084"
