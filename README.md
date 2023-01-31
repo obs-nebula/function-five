@@ -14,7 +14,17 @@ Run `./get-func.sh` to get the `func` command.
 ./func create -l node -t http five
 ```
 
-## Run
+## Run locally outside of a container
+
+After creating the functions, the code was changed by adding the business rule, and the tests were adjusted since most of the functions in this example are only handling the POST method.
+
+Some of the Knative function runtimes work out of the box without requiring a build, see the description [here](https://github.com/obs-nebula/function-five/issues/24#issue-1563392515).
+
+For this, another script was added to package.json `devjs`, then we can run `npm run devjs` specifying the http port with `--port=8080` for the `faas-js-runtime`.
+
+A basic script [./dev-js.sh](./dev-js.sh) can be executed to run the five functions.
+
+## Run locally
 
 ### Build the functions
 
