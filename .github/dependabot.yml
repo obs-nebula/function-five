@@ -4,19 +4,49 @@ updates:
     directory: "/one"
     schedule:
       interval: "daily"
+    ignore:
+      - dependency-name: "faas-js-runtime"
+      - dependency-name: "eslint"
+      - dependency-name: "nodemon"
+      - dependency-name: "supertest"
+      - dependency-name: "tape"
   - package-ecosystem: "npm"
     directory: "/two"
     schedule:
       interval: "daily"
+    ignore:
+      - dependency-name: "faas-js-runtime"
+      - dependency-name: "eslint"
+      - dependency-name: "nodemon"
+      - dependency-name: "supertest"
+      - dependency-name: "tape"  
   - package-ecosystem: "npm"
     directory: "/three"
     schedule:
       interval: "daily"
+    ignore:
+      - dependency-name: "faas-js-runtime"
+      - dependency-name: "eslint"
+      - dependency-name: "nodemon"
+      - dependency-name: "supertest"
+      - dependency-name: "tape"  
   - package-ecosystem: "npm"
     directory: "/four"
     schedule:
       interval: "daily"
+    ignore:
+      - dependency-name: "faas-js-runtime"
+      - dependency-name: "eslint"
+      - dependency-name: "nodemon"
+      - dependency-name: "supertest"
+      - dependency-name: "tape"  
   - package-ecosystem: "npm"
     directory: "/five"
     schedule:
       interval: "daily"
+    ignore:
+      - dependency-name: "faas-js-runtime"
+      - dependency-name: "eslint"
+      - dependency-name: "nodemon"
+      - dependency-name: "supertest"
+      - dependency-name: "tape"  
