@@ -2,6 +2,26 @@
 
 [![ci](https://github.com/obs-nebula/function-five/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/obs-nebula/function-five/actions/workflows/ci.yml)
 
+
+```mermaid
+graph TD;
+    Desktop--Initial request to FaaS-->A;
+    A--Adds 0+1 & send the result to -->B;
+    B--Adds 1+1 & send the result to -->C;
+    C--Adds 2+1 & send the result to -->D;
+    D--Adds 3+1 & send the result to -->E;
+    A--traces to-->OTELCOL;
+    B--traces to-->OTELCOL;
+    C--traces to-->OTELCOL;
+    D--traces to-->OTELCOL;
+    E--traces to-->OTELCOL;
+    OTELCOL-->Jaeger;
+    Desktop--Request the result-->E;
+```
+
+
+
+
 Run `./get-func.sh` to get the `func` command.
 
 > Functions created with the following commands:
