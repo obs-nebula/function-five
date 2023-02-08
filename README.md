@@ -34,7 +34,7 @@ Run `./get-func.sh` to get the `func` command.
 ./func create -l node -t http five
 ```
 
-## Run locally outside of a container
+## Run locally outside of a container (AKA - [Rebel-mode](https://www.youtube.com/watch?v=L9ndJUCoFJc))
 
 After creating the functions, the code was changed by adding the business rule, and the tests were adjusted since most of the functions in this example are only handling the POST method.
 
