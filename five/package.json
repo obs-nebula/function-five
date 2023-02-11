@@ -7,14 +7,14 @@
     "pretest": "eslint --ignore-path .gitignore .",
     "test": "node test/unit.js && node test/integration.js",
     "start": "FUNC_LOG_LEVEL=info faas-js-runtime ./index.js",
-    "devjs": "FUNC_LOG_LEVEL=info faas-js-runtime ./index.js --port=8084",
+    "devjs": "FUNC_LOG_LEVEL=debug faas-js-runtime ./index.js --port=8084",
     "debug": "nodemon --inspect ./node_modules/faas-js-runtime/bin/cli.js ./index.js"
   },
   "keywords": [],
   "author": "",
   "license": "Apache-2.0",
   "dependencies": {
-    "faas-js-runtime": "^0.9.7"
+    "faas-js-runtime": "github:helio-frota/faas-js-runtime#test-only"
   },
   "devDependencies": {
     "eslint": "^8.33.0",

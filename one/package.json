@@ -13,6 +13,10 @@
   "author": "Helio Frota",
   "license": "Apache-2.0",
   "dependencies": {
+    "@opentelemetry/exporter-trace-otlp-http": "^0.35.1",
+    "@opentelemetry/resources": "^1.9.1",
+    "@opentelemetry/sdk-trace-base": "^1.9.1",
+    "@opentelemetry/semantic-conventions": "^1.9.1",
     "faas-js-runtime": "^0.9.7"
   },
   "devDependencies": {

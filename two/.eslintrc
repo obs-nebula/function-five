@@ -1,46 +1,15 @@
 {
+  "extends": [
+    "eslint:recommended"
+  ],
   "env": {
-    "es6": true,
     "node": true
   },
   "parserOptions": {
-    "ecmaVersion": 2022,
-    "sourceType": "module"
+    "ecmaVersion": "latest"
   },
   "rules": {
-    "arrow-spacing": "error",
-    "arrow-parens": [
-      "error",
-      "as-needed"
-    ],
-    "arrow-body-style": [
-      "error",
-      "as-needed"
-    ],
-    "prefer-template": "error",
-    "max-len": [
-      "warn",
-      {
-        "code": 80,
-        "ignoreStrings": true
-      }
-    ],
-    "no-unused-vars": [
-      "warn",
-      {
-        "argsIgnorePattern": "^_$"
-      }
-    ],
-    "semi": [
-      "error",
-      "always"
-    ],
-    "quotes": [
-      "error",
-      "single",
-      {
-        "allowTemplateLiterals": true
-      }
-    ]
+    "semi": "error",
+    "quotes": ["error", "single", { "allowTemplateLiterals": true }]
   }
 }

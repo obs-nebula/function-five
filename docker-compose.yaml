@@ -6,11 +6,28 @@ networks:
     driver: bridge
 
 services:
+  jaeger-all-in-one:
+    hostname: jaeger-all-in-one
+    image: jaegertracing/all-in-one:latest
+    ports:
+      - "16685"
+      - "16686:16686"
+      - "14268:14268"
+      - "14250:14250"
+  collector:
+    image: otel/opentelemetry-collector:0.69.0
+    hostname: otelcol
+    command: ["--config=/otel-collector-config.yaml"]
+    volumes:
+      - './otel-collector-config.yaml:/otel-collector-config.yaml'
+    ports:
+      - "4318:4318"
+    depends_on: [jaeger-all-in-one]
   one:
     image: quay.io/hfrota/one:latest
     hostname: one
     environment:
-      - FUNC_PORT=8080 # same as faas-js-runtime --port=8080
+      - FUNC_PORT=8080
     ports:
       - "8080:8080"
   two:
