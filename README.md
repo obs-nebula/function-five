@@ -61,3 +61,5 @@ A basic script [./dev-js.sh](./dev-js.sh) can be executed to run the five functi
 ```
 docker-compose up
 ```
+
+> The fantastic desktop app used in this example is here: https://github.com/obs-nebula/desktop-electron
