@@ -9,7 +9,6 @@ updates:
       - dependency-name: "nodemon"
       - dependency-name: "supertest"
       - dependency-name: "tape"
-      - dependency-name: "eslint"
   - package-ecosystem: "npm"
     directory: "/two"
     schedule:
@@ -19,7 +18,6 @@ updates:
       - dependency-name: "nodemon"
       - dependency-name: "supertest"
       - dependency-name: "tape"
-      - dependency-name: "eslint"  
   - package-ecosystem: "npm"
     directory: "/three"
     schedule:
@@ -29,7 +27,6 @@ updates:
       - dependency-name: "nodemon"
       - dependency-name: "supertest"
       - dependency-name: "tape" 
-      - dependency-name: "eslint" 
   - package-ecosystem: "npm"
     directory: "/four"
     schedule:
@@ -39,7 +36,6 @@ updates:
       - dependency-name: "nodemon"
       - dependency-name: "supertest"
       - dependency-name: "tape" 
-      - dependency-name: "eslint" 
   - package-ecosystem: "npm"
     directory: "/five"
     schedule:
@@ -49,4 +45,3 @@ updates:
       - dependency-name: "nodemon"
       - dependency-name: "supertest"
       - dependency-name: "tape"  
-      - dependency-name: "eslint"
