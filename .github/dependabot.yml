@@ -3,7 +3,7 @@ updates:
   - package-ecosystem: "npm"
     directory: "/one"
     schedule:
-      interval: "daily"
+      interval: "monthly"
     ignore:
       - dependency-name: "eslint"
       - dependency-name: "nodemon"
@@ -12,7 +12,7 @@ updates:
   - package-ecosystem: "npm"
     directory: "/two"
     schedule:
-      interval: "daily"
+      interval: "monthly"
     ignore:
       - dependency-name: "eslint"
       - dependency-name: "nodemon"
@@ -21,7 +21,7 @@ updates:
   - package-ecosystem: "npm"
     directory: "/three"
     schedule:
-      interval: "daily"
+      interval: "monthly"
     ignore:
       - dependency-name: "eslint"
       - dependency-name: "nodemon"
@@ -30,7 +30,7 @@ updates:
   - package-ecosystem: "npm"
     directory: "/four"
     schedule:
-      interval: "daily"
+      interval: "monthly"
     ignore:
       - dependency-name: "eslint"
       - dependency-name: "nodemon"
@@ -39,7 +39,7 @@ updates:
   - package-ecosystem: "npm"
     directory: "/five"
     schedule:
-      interval: "daily"
+      interval: "monthly"
     ignore:
       - dependency-name: "eslint"
       - dependency-name: "nodemon"
