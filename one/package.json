@@ -13,7 +13,7 @@
   "author": "Helio Frota",
   "license": "Apache-2.0",
   "dependencies": {
-    "faas-js-runtime": "^1.0.0"
+    "faas-js-runtime": "^1.1.0"
   },
   "devDependencies": {
     "eslint": "^8.33.0",
